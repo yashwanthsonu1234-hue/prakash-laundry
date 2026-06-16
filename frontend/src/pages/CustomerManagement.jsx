@@ -10,7 +10,7 @@ export default function CustomerManagement() {
 
     axios
       .get(
-        "http://127.0.0.1:8000/api/customers/"
+        "https://prakash-laundry.onrender.com/api/customers/"
       )
       .then((res) => {
 

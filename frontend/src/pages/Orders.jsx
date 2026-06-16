@@ -12,7 +12,7 @@ useEffect(() => {
 
     axios
       .get(
-        "http://127.0.0.1:8000/api/my-orders/",
+        "https://prakash-laundry.onrender.com/api/my-orders/",
         {
           headers: {
             Authorization: `Bearer ${token}`,

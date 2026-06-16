@@ -29,7 +29,7 @@ export default function Booking() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/orders/",
+        "https://prakash-laundry.onrender.com/api/orders/",
         {
           customer_name: formData.name,
           phone: formData.phone,

@@ -15,7 +15,7 @@ export default function Review() {
 const submitReview = async () => {
   try {
     await axios.post(
-      "http://127.0.0.1:8000/api/reviews/",
+      "https://prakash-laundry.onrender.com/api/reviews/",
       {
         order: orderId,
         rating,

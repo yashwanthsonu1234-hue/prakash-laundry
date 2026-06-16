@@ -6,7 +6,7 @@ export default function AdminReviews() {
 
   const loadReviews = () => {
     axios
-      .get("http://127.0.0.1:8000/api/reviews/")
+      .get("https://prakash-laundry.onrender.com/api/reviews/")
       .then((res) => {
         setReviews(res.data);
       });
@@ -22,7 +22,7 @@ export default function AdminReviews() {
     }
 
     await axios.delete(
-      `http://127.0.0.1:8000/api/reviews/${id}/`
+      `https://prakash-laundry.onrender.com/api/reviews/${id}/`
     );
 
     loadReviews();

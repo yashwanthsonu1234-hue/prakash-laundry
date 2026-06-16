@@ -29,13 +29,13 @@ export default function Dashboard() {
 
   const fetchOrders = () => {
     axios
-  .get("http://127.0.0.1:8000/api/all-reviews/")
+  .get("https://prakash-laundry.onrender.com/api/all-reviews/")
   .then((res) => {
     setReviews(res.data);
   });
     axios
       .get(
-        "http://127.0.0.1:8000/api/orders/"
+        "https://prakash-laundry.onrender.com/api/orders/"
       )
       .then((res) => {
         setOrders(res.data);
@@ -51,7 +51,7 @@ export default function Dashboard() {
   ) => {
     try {
       await axios.patch(
-        `http://127.0.0.1:8000/api/orders/${id}/`,
+        `https://prakash-laundry.onrender.com/api/orders/${id}/`,
         {
           status: newStatus,
         }
@@ -86,7 +86,7 @@ export default function Dashboard() {
 
     try {
       await axios.delete(
-        `http://127.0.0.1:8000/api/orders/${id}/`
+        `https://prakash-laundry.onrender.com/api/orders/${id}/`
       );
 
       setOrders((prev) =>
@@ -358,7 +358,7 @@ const todayOrders =
 <button
 onClick={() =>
 window.open(
-"http://127.0.0.1:8000/api/export-orders/"
+"https://prakash-laundry.onrender.com/api/export-orders/"
 )
 }
 className="bg-green-600 px-4 py-2 rounded"
@@ -369,7 +369,7 @@ Export Orders
 <button
 onClick={() =>
 window.open(
-"http://127.0.0.1:8000/api/export-customers/"
+"https://prakash-laundry.onrender.com/api/export-customers/"
 )
 }
 className="bg-blue-600 px-4 py-2 rounded"
@@ -380,7 +380,7 @@ Export Customers
 <button
 onClick={() =>
 window.open(
-"http://127.0.0.1:8000/api/export-revenue/"
+"https://prakash-laundry.onrender.com/api/export-revenue/"
 )
 }
 className="bg-purple-600 px-4 py-2 rounded"
@@ -566,7 +566,7 @@ return;
 }
 
 await axios.delete(
-`http://127.0.0.1:8000/api/reviews/${review.id}/delete/`
+`https://prakash-laundry.onrender.com/api/reviews/${review.id}/delete/`
 );
 
 setReviews(

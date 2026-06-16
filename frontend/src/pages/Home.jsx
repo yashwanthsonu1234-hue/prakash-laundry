@@ -19,7 +19,7 @@ export default function Home() {
 
 useEffect(() => {
   axios
-    .get("http://127.0.0.1:8000/api/reviews/")
+    .get("https://prakash-laundry.onrender.com/api/reviews/")
     .then((res) => {
 
       setReviews(res.data.slice(0, 3));

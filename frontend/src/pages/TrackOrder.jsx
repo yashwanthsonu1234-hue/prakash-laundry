@@ -10,7 +10,7 @@ export default function TrackOrder() {
   const searchOrders = async () => {
     try {
       const response = await axios.get(
-        `http://127.0.0.1:8000/api/track-order/?phone=${phone}`
+        `https://prakash-laundry.onrender.com/api/track-order/?phone=${phone}`
       );
 
       setOrders(response.data);
@@ -108,7 +108,7 @@ export default function TrackOrder() {
             <button className="bg-yellow-600 px-4 py-2 rounded"
   onClick={() =>
     window.open(
-      `http://127.0.0.1:8000/api/invoice/${order.id}/`,
+      `https://prakash-laundry.onrender.com/api/invoice/${order.id}/`,
       "_blank"
     )
   }

@@ -21,7 +21,7 @@ export default function Analytics() {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/analytics/")
+      .get("https://prakash-laundry.onrender.com/api/analytics/")
       .then((res) => {
         setRevenueData(
           res.data.revenue_per_month || []
